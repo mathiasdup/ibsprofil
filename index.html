@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/keen-slider@5.4.0/keen-slider.min.css"
+      />
+
+      <link rel="stylesheet" href="./styles.css" />
+
+      <!-- GOOGLE FONT -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+      <div class="container">
+        <div class="flex-container">
+          <div></div>
+          <div><img id="img1" class="img-size selected-portrait" src="./Vincent-selected.png" onclick='changeImage("./Vincent-selected.png", "img1", "./Vincent.jpg");' onmouseover='freezeImage("./Vincent-selected.png", "img1", "./Vincent.jpg");' onmouseleave='unfreezeImage("./Vincent.png", "img1");'/></div>
+          <div></div>
+        </div>
+        <div>
+          <div><img id="content-portrait" class="content-portrait" src="./Vincent.jpg" /></div>
+          <div class="flex-container">
+            <div><img id="img2" class="img-size-bis" src="./Amandine.png" onclick='changeImage("./Amandine-selected.png", "img2", "./Amandine.jpg");' onmouseover='freezeImage("./Amandine-selected.png", "img2", "./Amandine.jpg");' onmouseleave='unfreezeImage("./Amandine.png", "img2");'/></div>
+            <div></div>
+            <div><img id="img3" class="img-size-bis" src="./Benoit.png" onclick='changeImage("./Benoit-selected.png", "img3", "./Benoit.jpg");' onmouseover='freezeImage("./Benoit-selected.png", "img3", "./Benoit.jpg");' onmouseleave='unfreezeImage("./Benoit.png", "img3");'/></div>
+          </div>
+
+          <div class="flex-container">
+            <div><img id="img4" class="img-size" src="./Julien.png" onclick='changeImage("./Julien-selected.png", "img4", "./Julien.jpg");' onmouseover='freezeImage("./Julien-selected.png", "img4", "./Julien.jpg");' onmouseleave='unfreezeImage("./Julien.png", "img4");'/></div>
+            <div></div>
+            <div><img id="img5" class="img-size" src="./Ophelie.png" onclick='changeImage("./Ophelie-selected.png", "img5", "./Ophelie.jpg");' onmouseover='freezeImage("./Ophelie-selected.png", "img5", "./Ophelie.jpg");' onmouseleave='unfreezeImage("./Ophelie.png", "img5");'/></div>
+          </div>
+        </div>
+        <div class="flex-container">
+          <div></div>
+          <div><img id="img6" class="img-size" src="./Constance.png" onclick='changeImage("./Constance-selected.png", "img6", "./Constance.jpg");' onmouseover='freezeImage("./Constance-selected.png", "img6", "./Constance.jpg");' onmouseleave='unfreezeImage("./Constance.png", "img6");'/></div>
+          <div></div>
+        </div>
+      </div>
+    
+      <script src="./script.js"></script>
+
+    </body>
+
+  </html>
