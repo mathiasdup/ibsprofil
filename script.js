@@ -15,13 +15,13 @@ function changeImage(a, b, c) {
   document.getElementById('content-portrait').src=c;
 
   elem1.classList.remove("selected-portrait");
-  elem1.src='./Vincent.png'
+  elem1.src='./Julien.png'
   elem2.classList.remove("selected-portrait");
   elem2.src='./Amandine.png'
   elem3.classList.remove("selected-portrait");
   elem3.src='./Benoit.png'
   elem4.classList.remove("selected-portrait");
-  elem4.src='./Julien.png'
+  elem4.src='./Vincent.png'
   elem5.classList.remove("selected-portrait");
   elem5.src='./Ophelie.png'
   elem6.classList.remove("selected-portrait");
@@ -34,10 +34,10 @@ function changeImage(a, b, c) {
 
 function freezeImage(a, b, c) {
 
-  elem1.src='./Vincent.png'
+  elem1.src='./Julien.png'
   elem2.src='./Amandine.png'
   elem3.src='./Benoit.png'
-  elem4.src='./Julien.png'
+  elem4.src='./Vincent.png'
   elem5.src='./Ophelie.png'
   elem6.src='./Constance.png'
 
@@ -47,17 +47,17 @@ function freezeImage(a, b, c) {
 
 function unfreezeImage(a, b) {
 
-  elem1.src='./Vincent.png'
+  elem1.src='./Julien.png'
   elem2.src='./Amandine.png'
   elem3.src='./Benoit.png'
-  elem4.src='./Julien.png'
+  elem4.src='./Vincent.png'
   elem5.src='./Ophelie.png'
   elem6.src='./Constance.png'
 
   if (elem1.classList.contains("selected-portrait")) { 
 
-    elem1.src='./Vincent-selected.png';
-    text.src='./Vincent.jpg';
+    elem1.src='./Julien-selected.png';
+    text.src='./Julien.jpg';
 
   } else if (elem2.classList.contains("selected-portrait")) {
 
@@ -71,8 +71,8 @@ function unfreezeImage(a, b) {
 
   } else if (elem4.classList.contains("selected-portrait")) {
 
-    elem4.src='./Julien-selected.png';
-    text.src='./Julien.jpg';
+    elem4.src='./Vincent-selected.png';
+    text.src='./Vincent.jpg';
 
   } else if (elem5.classList.contains("selected-portrait")) {
 
@@ -86,8 +86,8 @@ function unfreezeImage(a, b) {
 
   } else {
     document.getElementById(b).src=a;
-    elem1.src="./Vincent-selected.png"
-    text.src="./Vincent.jpg"
+    elem1.src="./Julien-selected.png"
+    text.src="./Julien.jpg"
   }
 
 }
